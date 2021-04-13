@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Twitter TweetWall</title>
+
+</head>
+<body>
+	<p><% if(name.trim().indexOf(' ') >= 0 || name == ' '){%>Invalid Twitter Handle! Please try again<%} else{%>Here are the 10 latests tweets for <%- name -%>!<%}%></p>	
+	<p id = '1'>Tweet 1: <% if(locals.data[0]){%><a><%-data[0]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '2'>Tweet 2: <% if(locals.data[1]){%><a><%-data[1]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '3'>Tweet 3: <% if(locals.data[2]){%><a><%-data[2]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '4'>Tweet 4: <% if(locals.data[3]){%><a><%-data[3]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '5'>Tweet 5: <% if(locals.data[4]){%><a><%-data[4]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '6'>Tweet 6: <% if(locals.data[5]){%><a><%-data[5]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '7'>Tweet 7: <% if(locals.data[6]){%><a><%-data[6]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '8'>Tweet 8: <% if(locals.data[7]){%><a><%-data[7]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '9'>Tweet 9: <% if(locals.data[8]){%><a><%-data[8]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	<p id = '10'>Tweet 10: <% if(locals.data[9]){%><a><%-data[9]['text']%></a><%} else{ %>No Tweets Here!<%}%></p>
+	
+</body>
+</html>
